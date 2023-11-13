@@ -20,7 +20,7 @@ class BookFactory extends Factory
             'title' => fake()->sentence(3),
             'author' => fake()->name,
             'created_at' => fake()->dateTimeBetween('-2 years'),
-            'updated_at' => fake()->dateTimeBetween('created_at', 'now'),
+            'updated_at' => fake()->dateTimeBetween('-2 years', 'now'),
             // updated_at would be a date value of the created_at column and atmost to now
         ];
     }
